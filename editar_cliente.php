@@ -40,11 +40,47 @@
 
 
     }
-
-
-
+    if ($conn->query($sql) === TRUE){
+        echo "Dados atualizados com sucesso!";
+    }else{
+        echo "Erro ao atualizar os dados:" . $conn->error;
     }
 
+    $conn->close();
 
-
+    }else{
+        echo "Cliente não especificado para a edição";
+        exit;
+    }
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cliente</title>
+</head>
+<body>
+    <h1>Editar Cliente</h1>
+    <form action="" method="POST">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" value="><?php echo $row
+        ["nome"]; ?>"required><br>
+         <label for="email">Email</label>
+        <input type="text" id="email" name="email" value="><?php echo $row
+        ["email"]; ?>"required><br>
+         <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" value="><?php echo $row
+        ["telefone"]; ?>"required><br>
+         <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" name="descricao" value="><?php echo $row
+        ["descricao"]; ?>"required><br>
+
+        <input type="submit" value="Salvar Alterações">
+
+    </form>
+    <br><a href="">Voltar</a>
+    
+</body>
+</html>
