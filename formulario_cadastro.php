@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="container">
-    <h1>Cadastro</h1>
     <h2>Cadastro de Clientes</h2>
     <form action="processa_cadastro.php" method="POST">
         <div class="form-group">
