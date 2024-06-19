@@ -60,9 +60,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Cliente</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Editar Cliente</h1>
+    <div id="titulo-editar">
+        <h1>Editar Cliente</h1>
+    </div>
     <form action="" method="POST">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="nome" value="><?php echo $row
@@ -80,7 +83,7 @@
         <input type="submit" value="Salvar Alterações">
 
     </form>
-    <br><a href="">Voltar</a>
+    <br><a href="cliente.php">Voltar</a>
     
 </body>
 </html>
