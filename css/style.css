@@ -10,6 +10,32 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Quantico', sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #00b3b3;
+    box-shadow: 0 0 10px #0ff;
+}
+
 .container {
     background-color: #111;
     padding: 20px;
@@ -18,21 +44,25 @@ body {
     width: 320px;
     border: 2px solid #0ff;
 }
+
 h2 {
     margin-top: 0;
     text-align: center;
     color: #0ff;
     text-shadow: 0 0 10px #0ff;
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
     color: #0ff;
     text-shadow: 0 0 5px #0ff;
 }
+
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
@@ -45,12 +75,15 @@ h2 {
     outline: none;
     transition: box-shadow 0.3s ease;
 }
+
 .form-group input:focus, .form-group textarea:focus {
     box-shadow: 0 0 10px #0ff;
 }
+
 .form-group textarea {
     resize: vertical;
 }
+
 .form-group button {
     width: 100%;
     padding: 10px;
@@ -62,15 +95,18 @@ h2 {
     font-family: 'Quantico', sans-serif;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .form-group button:hover {
     background-color: #00b3b3;
     box-shadow: 0 0 10px #0ff;
 }
+
 .back-button {
     background-color: #333;
     margin-top: 10px;
     color: #0ff;
 }
+
 .back-button:hover {
     background-color: #555;
     box-shadow: 0 0 10px #0ff;
