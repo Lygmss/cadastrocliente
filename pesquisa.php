@@ -32,3 +32,4 @@
  $conn->close();
 
 ?>
+<br><a href="/Cadastro/index.php">Voltar</a>
